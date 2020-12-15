@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminComponent implements OnInit {
 
+  toggledValue = true;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggled($event) {
+    this.toggledValue = $event;
   }
 
 }
